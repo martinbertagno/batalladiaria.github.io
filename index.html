@@ -262,6 +262,10 @@
   .tienda-row b{font-weight:750;}
   .tienda-row.yes{background:#E4F1E9;color:var(--green);}
   .tienda-row.no{background:#F7ECE3;color:var(--amber);border-color:#EBD8BF;}
+  /* ---- 4 donas en el avance de objetivos ---- */
+  .donut-row.donut-4{flex-wrap:wrap;row-gap:12px;}
+  .donut-row.donut-4>div{flex:0 0 25%;}
+  @media (max-width: 480px){ .donut-row.donut-4>div{flex:0 0 50%;} }
 </style>
 </head>
 <body>
@@ -284,9 +288,9 @@
     </div>
   </div>
 
-  <div class="summary" id="summaryBar" style="display: none;"><span><b>32</b> clientes</span>
-    <span><b>28</b> con compra</span>
-    <span><b>$6.155.170</b> facturado</span></div>
+  <div class="summary" id="summaryBar" style="display: none;"><span><b>27</b> clientes</span>
+    <span><b>22</b> con compra</span>
+    <span><b>$13.722.484</b> facturado</span></div>
 
   <div class="list" id="listView" style="display: block;"><div class="empty-state"><span class="big">👆</span>Elegí vendedor y día de visita<br>para ver la cartera del día.</div></div>
 
@@ -1520,7 +1524,7 @@
     <div class="panel-2col">
       <div class="mini-panel">
         <div class="mp-title">AVANCE DE OBJETIVOS DEL MES</div>
-        <div class="donut-row">
+        <div class="donut-row donut-4">
           
     <div>
       <svg width="64" height="64" viewBox="0 0 64 64">
@@ -1554,7 +1558,19 @@
       <div class="dlabel">SKU prom.</div>
     </div>
   
+          
+    <div>
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="26" fill="none" stroke="#EEEBE2" stroke-width="7"></circle>
+        <circle cx="32" cy="32" r="26" fill="none" stroke="#6250d6" stroke-width="7" stroke-linecap="round" stroke-dasharray="84.1 163.4" transform="rotate(-90 32 32)"></circle>
+        <text x="32" y="36" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">51%</text>
+      </svg>
+      <div class="dval">748 PDV</div>
+      <div class="dlabel">LPI</div>
+    </div>
+  
         </div>
+        <div style="font-size:10.5px;color:var(--muted);margin-top:10px;text-align:center;line-height:1.45;">LPI: 4.733 de 9.196 ítems cumplidos · 7 PDV con el LPI completo</div>
       </div>
       <div class="mini-panel">
         <div class="mp-title">FACTURACIÓN POR CATEGORÍA</div>
@@ -1865,7 +1881,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">41 clientes · 19% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">30.5 / obj. 27.3 (112%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">127 de 147</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">49% · 1045/2119 · 149 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">52% · 952/1828 · 149 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">80/ obj. 76 (105%) · +3 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">54/ obj. 27 (200%) · +3 hoy</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">144/ obj. 140 (103%) · +8 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">125/ obj. 117 (107%) · +6 hoy</span></div>
       </div>
     
@@ -1879,7 +1895,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">0 clientes · 0% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">1.2 / obj. 23.1 (5%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">6 de 112</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">0% · 0/9 · 1 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">0% · 0/8 · 1 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">11/ obj. 11 (100%)</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">1 clientes</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">2/ obj. 2 (100%)</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">1/ obj. 2 (50%)</span></div>
       </div>
     
@@ -1893,7 +1909,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">58 clientes · 28% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">28.9 / obj. 28.3 (102%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">135 de 143</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">51% · 964/1875 · 127 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">54% · 875/1615 · 127 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">99/ obj. 87 (114%) · +3 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">99/ obj. 17 (582%)</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">150/ obj. 137 (109%) · +10 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">129/ obj. 113 (114%) · +1 hoy</span></div>
       </div>
     
@@ -1907,7 +1923,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">43 clientes · 22% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">25.3 / obj. 27.6 (92%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">128 de 137</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">50% · 832/1671 · 121 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">53% · 761/1434 · 121 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">55/ obj. 59 (93%) · +5 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">27/ obj. 13 (208%)</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">117/ obj. 107 (109%) · +8 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">101/ obj. 97 (104%) · +2 hoy</span></div>
       </div>
     
@@ -1921,7 +1937,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">54 clientes · 27% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">25.3 / obj. 28.0 (90%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">109 de 134</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">44% · 691/1588 · 116 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">46% · 626/1362 · 116 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">79/ obj. 83 (95%) · +1 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">26/ obj. 12 (217%)</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">111/ obj. 107 (104%) · +3 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">66/ obj. 72 (92%) · +1 hoy</span></div>
       </div>
     
@@ -1935,7 +1951,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">46 clientes · 26% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">25.1 / obj. 28.3 (89%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">81 de 108</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">41% · 446/1080 · 86 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">43% · 400/921 · 86 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">68/ obj. 48 (142%) · +5 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">30/ obj. 8 (375%) · +3 hoy</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">82/ obj. 75 (109%) · +8 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">68/ obj. 69 (99%) · +3 hoy</span></div>
       </div>
     
@@ -1949,7 +1965,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">45 clientes · 66% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">29.1 / obj. 32.9 (89%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">44 de 49</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">45% · 287/639 · 43 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">48% · 256/537 · 43 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">28/ obj. 21 (133%) · +4 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">19/ obj. 7 (271%) · +1 hoy</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">42/ obj. 36 (117%) · +4 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">35/ obj. 31 (113%) · +4 hoy</span></div>
       </div>
     
@@ -1963,7 +1979,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">0 clientes · 0% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">74.5 / obj. 47.1 (158%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">4 de 6</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">43% · 57/134 · 6 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">45% · 52/116 · 6 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">4/ obj. 1 (400%) · +4 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">3/ obj. 4 (75%) · +2 hoy</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">4/ obj. 3 (133%) · +1 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">4/ obj. 4 (100%) · +2 hoy</span></div>
       </div>
     
@@ -1977,7 +1993,7 @@
         <div class="vend-metric"><span class="l">Tienda Mondelēz</span><span class="r">49 clientes · 36% de su cartera</span></div>
         <div class="vend-metric"><span class="l">SKU promedio</span><span class="r">34.9 / obj. 33.0 (106%)</span></div>
         <div class="vend-metric"><span class="l" style="padding-left:10px;color:var(--muted);">↳ clientes considerados</span><span class="r">97 de 103</span></div>
-        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">56% · 910/1611 · 99 PDV</span></div>
+        <div class="vend-metric"><span class="l">LPI (cumplimiento de la cartera)</span><span class="r">59% · 811/1375 · 99 PDV</span></div>
         <div class="vend-metric"><span class="l">KPI Clight</span><span class="r">62/ obj. 67 (93%) · +4 hoy</span></div><div class="vend-metric"><span class="l">KPI cerealitas dulces</span><span class="r">59/ obj. 37 (159%) · +1 hoy</span></div><div class="vend-metric"><span class="l">KPI alfajor</span><span class="r">95/ obj. 86 (110%) · +9 hoy</span></div><div class="vend-metric"><span class="l">KPI beldent regular</span><span class="r">76/ obj. 75 (101%) · +7 hoy</span></div>
       </div>
     
@@ -1993,23 +2009,25 @@
   <button class="sheet-close" id="sheetClose">✕</button>
   <div class="sheet-handle"></div>
   <div class="sheet-head">
-    <div class="name" id="sheetName">ROJAS RODRIGO ALEXIS</div>
-    <div class="code" id="sheetCode">Código 64117 · ZUAZUBISCAR M. · KIOSKO VENTANA</div>
+    <div class="name" id="sheetName">MARTINEZ CONTI JUAN MANUEL</div>
+    <div class="code" id="sheetCode">Código 40800 · BELEN MARTIN · KIOSKO VENTANA</div>
   </div>
   <div class="sheet-body" id="sheetBody">
-    
+    <div style="background:#E4F1E9;color:var(--green);padding:9px 12px;border-radius:9px;margin-bottom:14px;font-size:12.5px;font-weight:650;">🛒 Compró desde la última carga: $136.948 · 3 artículo(s) nuevo(s)</div>
     <div class="stat-row">
       <div class="stat-box">
         <div class="lbl">Facturación neta acum.</div>
-        <div class="val">$320.607</div>
+        <div class="val">$862.547</div>
       </div>
       <div class="stat-box">
         <div class="lbl">SKU comprados</div>
-        <div class="val">23 / obj. 22.6</div>
+        <div class="val">43 / obj. 22.6</div>
         <div class="sku-bar-wrap"><div class="sku-bar" style="width:100%"></div></div>
         <div class="sub2" style="font-size:10.5px;color:var(--muted);margin-top:4px;">Objetivo de KIOSKO VENTANA</div>
       </div>
     </div>
+
+    <div class="tienda-row yes"><span>Tienda Mondelēz</span><b>✓ Compró este mes</b></div>
 
     <div class="section-title">Categorías compradas / faltantes</div>
     <div class="chip-grid"><span class="chip miss">○ beverages</span><span class="chip ok">✓ biscuit</span><span class="chip ok">✓ candies</span><span class="chip ok">✓ chocolates</span><span class="chip miss">○ dry mixes</span><span class="chip ok">✓ gums</span></div>
@@ -2029,7 +2047,7 @@
         <div class="kname">cerealitas dulces</div>
         <div class="kskus">5 SKU asociado(s)</div>
       </div>
-      <span class="badge yes">Compró</span>
+      <span class="badge no">No compró</span>
     </div>
   
     <div class="kpi-item">
@@ -2037,7 +2055,7 @@
         <div class="kname">alfajor</div>
         <div class="kskus">18 SKU asociado(s)</div>
       </div>
-      <span class="badge no">No compró</span>
+      <span class="badge yes">Compró</span>
     </div>
   
     <div class="kpi-item">
@@ -2048,6 +2066,15 @@
       <span class="badge yes">Compró</span>
     </div>
   </div>
+
+    
+    <div class="section-title">LPI Mondelez · Oro · Kiosco Ventana</div>
+    <div class="lpi-head"><div class="lpi-big">7/10</div><div class="lpi-pct mid">70%</div></div>
+    <div class="sku-bar-wrap"><div class="sku-bar" style="width:70%"></div></div>
+    <div class="lpi-group">Falta comprar · 3</div>
+    <div class="lpi-cat">Biscuits · 1</div><div class="lpi-row miss"><span class="lpi-mark">○</span><div><div>Variedad 390g</div></div></div><div class="lpi-cat">Chocolates · 2</div><div class="lpi-row miss"><span class="lpi-mark">○</span><div><div>Alfajor Oreo Triple</div></div></div><div class="lpi-row miss"><span class="lpi-mark">○</span><div><div>Alfajor Terrabusi Triple Ddl / Alfajor Terrabusi Triple Torta</div><div class="lpi-sub">Con uno de estos alcanza</div></div></div>
+    <div class="lpi-group">Ya compró · 7</div><div class="lpi-cat">Biscuits · 2</div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Oreo Single</div><div class="lpi-sub">OREO REGULAR 1X118 GRS</div></div></div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Pepitos Single</div><div class="lpi-sub">PEPITOS REGULAR 1X119 GRS</div></div></div><div class="lpi-cat">Chocolates · 3</div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Bloque Shot 6x25x35g</div><div class="lpi-sub">SHOT BLOQUE 25X35 GRS</div></div></div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Cadbury Yogur De Frutilla 29g</div><div class="lpi-sub">CADBURY YOG FRUT 2021 12X29 GRS</div></div></div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Rhodesia Estuche / Tita Estuche / Rhodesia Clasica Agrupada / Tita Agrupada</div><div class="lpi-sub">RHODESIA ESTUCHE 36X22 GRS · MINI RHODESIA 1X60 GRS · TITA ESTUCHE 2021 36X19 GRS · +1 más</div></div></div><div class="lpi-cat">Flex · varias categorías · 2</div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Alfajor Trishot / Alfajor Pepitos Triple</div><div class="lpi-sub">ALFAJOR TRIPLE SHOT PM 36X60 GRS · ALFAJOR TRIPLE PEPITOS 36X57 GRS</div></div></div><div class="lpi-row ok"><span class="lpi-mark">✓</span><div><div>Halls Extra Strong Ar / Beldent Menta Fuerte 20x20 / Beldent Menta 20x20</div><div class="lpi-sub">CAR HALLS XTRA STRONG 12X24,75 GRS · BELDENT MENTA FUERTE FOMO 20X20 GRS · BELDENT MENTA FOMO 20X20 GRS</div></div></div>
+  
   </div>
 </div>
 
@@ -2409,6 +2436,7 @@ function computeGlobalStats(){
   const canalStats = computeCumplimientoPorCanal();
   const skuDen = porVendedor.reduce((a,s)=>a+s.skuClientes,0);
   g.skuPromedio = skuDen>0 ? porVendedor.reduce((a,s)=>a+s.skuSum,0)/skuDen : 0;
+  g.lpi = lpiResumen(cartera);
   g.tiendaCargada = tiendaCargada();
   g.tiendaN = porVendedor.reduce((a,s)=>a+s.tienda.n,0);
   g.objSkuPromedio = (skuDen>0 && porVendedor.some(s=>s.hayObjSku)) ? porVendedor.reduce((a,s)=>a+s.skuObjSum,0)/skuDen : 0;
@@ -2557,11 +2585,13 @@ function renderReport(){
     <div class="panel-2col">
       <div class="mini-panel">
         <div class="mp-title">AVANCE DE OBJETIVOS DEL MES</div>
-        <div class="donut-row">
+        <div class="donut-row${(g.lpi && g.lpi.pdv>0)?' donut-4':''}">
           ${svgDonut(pct(g.facturacionMes,g.objFacturacion), '#2a78d6', 'Facturación', fmtMoney(g.facturacionMes))}
           ${svgDonut(pct(g.conCompraMes,g.objCobertura), '#1baf7a', 'Cobertura', g.conCompraMes+' cli.')}
           ${svgDonut(pct(g.skuPromedio,g.objSkuPromedio), '#eda100', 'SKU prom.', g.skuPromedio.toFixed(1))}
+          ${(g.lpi && g.lpi.pdv>0) ? svgDonut(g.lpi.pct, '#6250d6', 'LPI', g.lpi.pdv+' PDV') : ''}
         </div>
+        ${(g.lpi && g.lpi.pdv>0) ? `<div style="font-size:10.5px;color:var(--muted);margin-top:10px;text-align:center;line-height:1.45;">LPI: ${g.lpi.sat.toLocaleString('es-AR')} de ${g.lpi.tot.toLocaleString('es-AR')} ítems cumplidos · ${g.lpi.pdv100} PDV con el LPI completo</div>` : ''}
       </div>
       <div class="mini-panel">
         <div class="mp-title">FACTURACIÓN POR CATEGORÍA</div>
@@ -3476,7 +3506,9 @@ function lpiDesc(){
   return lpiDescCache;
 }
 
-// Lista de ítems del LPI para un canal + categorización. Cada FLEX (dentro de su categoría) cuenta como 1 ítem.
+// Lista de ítems del LPI para un canal + categorización. Cada número de FLEX es un solo grupo dentro de esa combinación
+// (aunque mezcle categorías) y cuenta como 1 ítem: alcanza con que el cliente haya comprado uno de sus productos.
+const LPI_CAT_MIXTA='Flex · varias categorías';
 function lpiItemsPara(info){
   const regN=lpiNorm(info.region), canN=lpiNorm(info.canal), claN=lpiNorm(info.clasif);
   const key=regN+'|'+canN+'|'+claN;
@@ -3485,10 +3517,10 @@ function lpiItemsPara(info){
   const items=[], flexIdx={};
   rows.forEach(r=>{
     const sap=String(r.sap);
-    const op={sap, nombre:r.nombre, codes:lpiCodes(sap)};
+    const op={sap, nombre:r.nombre, categoria:r.categoria, codes:lpiCodes(sap)};
     const flex=String(r.flex||'').trim();
     if(flex){
-      const k=lpiNorm(r.categoria)+'|'+lpiNorm(flex);
+      const k=lpiNorm(flex);
       if(flexIdx[k]===undefined){ flexIdx[k]=items.length; items.push({categoria:r.categoria, flex:true, opciones:[]}); }
       items[flexIdx[k]].opciones.push(op);
     }else{
@@ -3496,7 +3528,11 @@ function lpiItemsPara(info){
     }
   });
   // Un ítem sin ningún código en el catálogo no se puede comprar: no se cuenta (se avisa en ⚙)
-  const validos=items.map(it=>({categoria:it.categoria, flex:it.flex, opciones:it.opciones.filter(o=>o.codes.length)})).filter(it=>it.opciones.length);
+  const validos=items.map(it=>{
+    const ops=it.opciones.filter(o=>o.codes.length);
+    const cats=[...new Set(ops.map(o=>o.categoria))];
+    return {categoria: cats.length>1 ? LPI_CAT_MIXTA : (cats[0]||it.categoria), flex:it.flex, opciones:ops};
+  }).filter(it=>it.opciones.length);
   lpiItemsCache[key]={items:validos, sinEquiv:items.length-validos.length};
   return lpiItemsCache[key];
 }
@@ -3555,6 +3591,7 @@ function lpiSectionHtml(clienteCod){
   const e=lpiEstado(clienteCod);
   if(!e) return '';   // PDV sin seguimiento LPI: no muestra bloque
   const cats=[]; e.detalle.forEach(d=>{ if(!cats.includes(d.categoria)) cats.push(d.categoria); });
+  cats.sort((a,b)=>(a===LPI_CAT_MIXTA)-(b===LPI_CAT_MIXTA));
   const porCat=(ok)=>cats.map(cat=>{
     const its=e.detalle.filter(d=>d.categoria===cat && d.ok===ok);
     return its.length ? `<div class="lpi-cat">${escapeHtml(cat)} · ${its.length}</div>${its.map(lpiRowHtml).join('')}` : '';
